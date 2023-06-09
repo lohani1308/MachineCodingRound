@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 100vh;
+}
+
+
+.star-rating{
+   
+}
+
+.active{
+   color: rgb(208, 208, 49);
+}
+
+div span:hover{
+    transform: scale(1.5);
+}
