@@ -15,11 +15,11 @@ function executeRating(stars){
             console.log(star.className)
             document.getElementById("noStars").innerHTML=i+1;
 
-            if(star.className===starClassInactive){
-                for(i;i>=0;i--)stars[i].className=starClassActive;
+            if(star.classList.contains('active')){
+                for (i; i < len; ++i) stars[i].classList.remove('active');
             }
             else {
-                for (i; i < len; ++i) stars[i].className = starClassInactive;
+                for(i;i>=0;i--)stars[i].classList.add('active');
              }
         };
     });
