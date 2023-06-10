@@ -4,9 +4,11 @@ console.log(stars);
 function executeRating(stars){
     const starClassActive='fa fa-star active';
     const starClassInactive='fa fa-star';
-867
+
     const len=stars.length;
     let i;
+
+    
 
     stars.map((star)=>{
         star.onclick=()=>{

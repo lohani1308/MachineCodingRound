@@ -1,10 +1,10 @@
-const btn=document.getElementsByClassName("accordian");
-
+const btn=[...document.getElementsByClassName("accordian")];
+//Converting HTMLCollection to array
 console.log(btn);
 
 
-for(let i=0;i<btn.length;i++){
-     btn[i].addEventListener("click",function(){
+btn.map((bt)=>{
+     bt.addEventListener("click",function(){
         console.log(this);
         this.classList.toggle("active");
         var panel=this.nextElementSibling;
@@ -16,4 +16,4 @@ for(let i=0;i<btn.length;i++){
             panel.style.maxHeight=panel.scrollHeight+"px";
         }
      })
-}
+})
