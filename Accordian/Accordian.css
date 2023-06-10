@@ -1,0 +1,33 @@
+.accordian{
+    background-color: #eee;
+    width: 100%;
+    color: #444;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    text-align: left;
+    height: 4rem;
+}
+
+
+.panel{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordian:hover{
+    font-size: larger;
+}
+
+.accordian::after{
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
