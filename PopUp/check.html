@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="check.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="kinetic-text">Falling Text</h1>
+    </div>
+
+    <script>
+        function sum(){
+            let numbers=[];
+
+            function addNumber(number){
+                if(number!=undefined){
+                    numbers.push(number);
+                }
+
+                return addNumber;
+            }
+
+            addNumber.toString = function() {
+                return numbers.reduce((acc, curr) => acc + parseInt(curr), 0);
+            };
+
+        return addNumber;
+        }
+        
+        const result = sum(2)()(3)(2)(2)(1)(2)(4)()()(3);
+        console.log(result);
+    </script>
+      
+</body>
+</html>
+  

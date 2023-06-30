@@ -1,0 +1,23 @@
+.container {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .kinetic-text {
+    position: relative;
+    font-size: 48px;
+    animation: fallingText 1s linear infinite;
+  }
+  
+  @keyframes fallingText {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  

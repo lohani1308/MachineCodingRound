@@ -10,6 +10,7 @@
     min-width: 300px;
     margin-left: 100px;
     animation: slide 15s linear infinite;
+    transition: opacity 0.5s ease-out;
   }
 
 .pink {
